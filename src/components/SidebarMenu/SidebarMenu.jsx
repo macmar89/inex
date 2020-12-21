@@ -30,7 +30,7 @@ const SidebarMenu = () => {
                         </ul >
                     </Col >
                     <Col className="col-3">
-                        <Button onClick={showSidebar}>Close</Button>
+                        <Button className="btn-dark" onClick={showSidebar}>Menu</Button>
                     </Col>
                 </Row >
             </div >

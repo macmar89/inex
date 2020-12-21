@@ -1,22 +1,20 @@
 import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import './App.scss'
+import './scss/App.scss'
 import { Switch, Route } from 'react-router-dom'
-
-import TheNavigation from './components/TheNavigation';
 
 // components
 
-import HomePage from './views/HomePage'
-import TheContact from './views/TheContact'
-import MasterHeader from './components/MasterHeader'
+import HomePage from './pages/HomePage'
+import TheContact from './pages/TheContact'
 import { Container } from 'react-bootstrap';
 import SidebarMenu from './components/SidebarMenu/SidebarMenu';
+import JaponskeSteny from './pages/JaponskeSteny'
 
 
 function App() {
   return (
-    <div >
+    <div className="app">
       <SidebarMenu />
       {/* <MasterHeader /> */}
 
@@ -25,6 +23,7 @@ function App() {
         <Switch >
           <Route path='/homepage' component={HomePage} />
           <Route path='/kontakt' component={TheContact} />
+          <Route path='/japonskesteny' component={JaponskeSteny} />
         </Switch>
       </Container>
 

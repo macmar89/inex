@@ -3,20 +3,22 @@ $color-two: #9a9c9e;
 
 .SideBar {
 
-    z-index: 99;
     .SidebarMenu {
         float: left;
         background-color: #1A1C1E;
         max-width: 480px;
-        padding: 1rem;
+        padding: 1rem ;  
         position: fixed;
         height: 100%;
+        display: flex;
+        z-index: 99;
     }
     .SidebarActive {
         padding: 3rem 2rem;
-        max-width: 400px;
+        max-width: 480px;
     }
     .SidebarHeader {
+        margin-top: 3rem;
         margin-bottom: 3rem;
         color: white;
         h3 {
@@ -35,11 +37,7 @@ $color-two: #9a9c9e;
     .NavItem {
         position: relative;
         border-bottom: 1px solid $color-menu;
-        padding: 1rem 0;
-        & :focus {
-            background-color: hotpink;
-        }
- 
+        padding: 0.5rem 0; 
     }
 
     .NavItem:focus,
