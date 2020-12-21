@@ -11,13 +11,16 @@ import HomePage from './views/HomePage'
 import TheContact from './views/TheContact'
 import MasterHeader from './components/MasterHeader'
 import { Container } from 'react-bootstrap';
+import SidebarMenu from './components/SidebarMenu/SidebarMenu';
 
 
 function App() {
   return (
     <div className="App">
-      <MasterHeader />
-      <TheNavigation />
+      <SidebarMenu />
+      {/* <MasterHeader /> */}
+
+      {/* <TheNavigation /> */}
       <Container>
         <Switch>
           <Route path='/homepage' component={HomePage} />
