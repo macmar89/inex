@@ -1,6 +1,6 @@
 import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import './App.css'
+import './App.scss'
 import { Switch, Route } from 'react-router-dom'
 
 import TheNavigation from './components/TheNavigation';
@@ -16,13 +16,13 @@ import SidebarMenu from './components/SidebarMenu/SidebarMenu';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <SidebarMenu />
       {/* <MasterHeader /> */}
 
       {/* <TheNavigation /> */}
-      <Container>
-        <Switch>
+      <Container >
+        <Switch >
           <Route path='/homepage' component={HomePage} />
           <Route path='/kontakt' component={TheContact} />
         </Switch>

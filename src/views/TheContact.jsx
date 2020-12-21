@@ -4,7 +4,7 @@ import ContactForm from '../components/ContactForm'
 
 const TheContact = () => {
     return (
-        <div>
+        <div className="app contact">
             <Row className="my-3">
                 <Col>
                     <h2>Kontakt</h2>
