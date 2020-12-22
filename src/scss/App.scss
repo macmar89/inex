@@ -25,15 +25,19 @@ body{
   height: 100%;
 
 }
+.main-picture {
+  max-width: 100%;
+  box-shadow: 2px 2px 5px #3a3c3e;
+}
 
+.HomePicture {
+  padding: 0;
+  margin-bottom: 3rem;
+}
 .HomePage {
 
   z-index: 1;
 
-  .HomePicture {
-    padding: 0;
-    margin-bottom: 3rem;
-  }
   .main-picture {
     max-width: 100%;
     box-shadow: 2px 2px 5px #3a3c3e;

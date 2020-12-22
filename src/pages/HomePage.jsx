@@ -1,23 +1,11 @@
 import React from 'react'
-import { Row, Col, Container } from 'react-bootstrap'
-import Picture from '../img/cropped-body.jpg'
+import { Row, Col } from 'react-bootstrap'
 
 const HomePage = () => {
     return (
         <div className="HomePage">
-            <Container >
-                <Row>
-                    <Col className="HomePicture">
-                        <img className="main-picture" src={Picture} alt="sediacujo"></img>
-                    </Col>
-                </Row>
-            </Container>
             <Row>
-                <Col>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
+                <Col md={10} className="mx-auto">
                     <h2 >Home page</h2>
                     <h4>O firme</h4>
                     <h4>Vitajte na stránke spoločnosti INEX Decor, s.r.o</h4>
