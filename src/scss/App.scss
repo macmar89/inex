@@ -1,6 +1,7 @@
 // variables
 $color-menu: #3a3c3e;
 $color-two: #9a9c9e;
+// $link-color: #3a3c3e;
 
 
 //css
@@ -44,5 +45,33 @@ body{
   }
   p {
     line-height: 1.5rem;
+  }
+}
+
+// .CompaniesLogo
+//  -----------------------------------
+
+.CompaniesLogo {
+  margin: 0 1rem;
+}
+
+//  InexFooter
+//  -----------------------------------
+
+.InexFooter {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  h4 {
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 1rem;
+
+  a{
+    color: $color-menu;
+    }
   }
 }

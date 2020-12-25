@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import ContactForm from '../components/ContactForm'
-
+import OpenHours from '../components/OpenHours'
 const TheContact = () => {
     return (
         <div className="contact">
@@ -12,6 +12,7 @@ const TheContact = () => {
                         <h2>Kontakt</h2>
                     </Col>
                 </Row>
+                <OpenHours />
                 <Row>
                     <Col xs={12} md={6}>
                         <p>Nájdete nás:</p>

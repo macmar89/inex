@@ -14,6 +14,7 @@ import JaponskeSteny from './pages/JaponskeSteny'
 import Picture from './img/cropped-body.jpg'
 import TheGallery from './pages/TheGallery'
 
+import InexFooter from './components/InexFooter'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path='/japonskesteny' component={JaponskeSteny} />
         </Switch>
       </Container>
+      <InexFooter />
 
     </div>
   );

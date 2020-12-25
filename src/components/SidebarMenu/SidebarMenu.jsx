@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './SidebarMenu.scss'
 import { Link } from 'react-router-dom'
-import { SidebarData } from './SidebarData'
+import { SidebarData } from '../../data/SidebarData'
 import { Button, Col, Row } from 'react-bootstrap'
 
 
