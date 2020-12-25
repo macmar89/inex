@@ -6,13 +6,12 @@ const TheContact = () => {
     return (
         <div className="contact">
             <Container>
-
                 <Row className="my-3">
                     <Col>
                         <h2>Kontakt</h2>
                     </Col>
                 </Row>
-                <OpenHours />
+                <OpenHours size="lg" />
                 <Row>
                     <Col xs={12} md={6}>
                         <p>Nájdete nás:</p>

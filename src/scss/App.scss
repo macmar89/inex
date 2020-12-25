@@ -59,12 +59,18 @@ body{
 //  -----------------------------------
 
 .InexFooter {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  background-color: $color-two;
+  
+  .row {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
 
   h4 {
     text-align: center;
   }
+
+
 
   ul {
     list-style: none;

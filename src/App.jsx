@@ -22,7 +22,7 @@ function App() {
       <SidebarMenu />
       {/* <MasterHeader /> */}
       {/* <TheNavigation /> */}
-      <Container >
+      <Container>
         <Row>
           <Col lg={10} className="HomePicture mx-auto">
             <img className="main-picture" src={Picture} alt="sediacujo"></img>

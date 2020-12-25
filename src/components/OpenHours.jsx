@@ -1,10 +1,11 @@
 import React from 'react'
+import { Table } from 'react-bootstrap'
 import { OpenHoursData } from '../data/OpenHoursData'
 
 const OpenHours = () => {
     return (
         <div className="OpenHours">
-            <table className="table">
+            <Table className="col-5" size="lg">
                 <tbody>
                     {OpenHoursData.map((day, index) => (
                         <tr key={index}>
@@ -13,7 +14,7 @@ const OpenHours = () => {
                         </tr>
                     ))}
                 </tbody>
-            </table>
+            </Table>
         </div>
     )
 }
