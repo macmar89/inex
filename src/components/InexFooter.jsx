@@ -1,6 +1,5 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
-import OpenHours from './OpenHours'
 
 
 const InexFooter = () => {

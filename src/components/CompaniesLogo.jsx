@@ -9,14 +9,14 @@ import Sherlock from '../img/companies/sherlock-1.png'
 const CompaniesLogo = () => {
     return (
         <div className="CompaniesLogo">
-            <Row className="mx-auto">
-                <Col className="col-3">
-                    <img src={Egger} alt="eggerlogo" />
-                </Col>
+            <Row className="mx-auto my-5">
                 <Col className="col-3">
                     <a href="https://www.egger.com/shop/cs_SK/">
-                        <img src={Krono} alt="kronologo" />
+                        <img src={Egger} alt="eggerlogo" />
                     </a>
+                </Col>
+                <Col className="col-3">
+                    <img src={Krono} alt="kronologo" />
                 </Col>
                 <Col className="col-3">
                     <img src={Gardinia} alt="gardinialogo" />

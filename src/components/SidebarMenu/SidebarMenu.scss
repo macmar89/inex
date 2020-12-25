@@ -32,6 +32,9 @@ $color-two: #9a9c9e;
         list-style: none;
         padding: 0;
         font-size: 1.2rem;
+        a {
+            text-decoration: none;
+        }
     }
 
     .NavItem {
@@ -43,10 +46,10 @@ $color-two: #9a9c9e;
     .NavItem:focus,
     .NavItem:hover {
         background-color: $color-menu;
-        color: white;
     }
     .NavItem span {
     padding-left: 0.5rem;
         color: #9a9c9e;
     }
+
 }

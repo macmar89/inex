@@ -63,7 +63,6 @@ body{
   
   .row {
     padding-top: 2rem;
-    padding-bottom: 1rem;
   }
 
   h4 {
@@ -78,6 +77,7 @@ body{
 
   a{
     color: $color-menu;
+    text-decoration: none;
     }
   }
 }
