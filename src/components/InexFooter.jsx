@@ -2,6 +2,7 @@ import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 
 
+
 const InexFooter = () => {
     return (
         <div className="InexFooter mx-auto">
