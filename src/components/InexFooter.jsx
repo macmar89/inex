@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
-
+import OpenHours from './OpenHours'
 
 
 const InexFooter = () => {
@@ -10,6 +10,7 @@ const InexFooter = () => {
                 <Row>
                     <Col>
                         <h4>Otváracie hodiny</h4>
+                        <OpenHours cName="inextable" />
                     </Col>
                     <Col>
                         <p>avojcek</p>

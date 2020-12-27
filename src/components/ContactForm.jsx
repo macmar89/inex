@@ -144,8 +144,8 @@ class ContactForm extends Component {
                 <Row >
                     <Col className="mx-auto" xs={12} md={8}>
                         <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
-                            <div className='row'>
-                                <div className='col-6'>
+                            <Row>
+                                <Col>
                                     <input
                                         type='text'
                                         name='name'
@@ -158,9 +158,6 @@ class ContactForm extends Component {
                                     {formErrors.name.length > 0 && (
                                         <span className='errorMessage'>{formErrors.name}</span>
                                     )}
-                                </div>
-
-                                <div className='col-6'>
                                     <input
                                         type='email'
                                         name='email'
@@ -173,11 +170,6 @@ class ContactForm extends Component {
                                     {formErrors.email.length > 0 && (
                                         <span className='errorMessage'>{formErrors.email}</span>
                                     )}
-                                </div>
-                            </div>
-
-                            <div className='row'>
-                                <div className='col-6'>
                                     <input
                                         type='subject'
                                         name='subject'
@@ -191,9 +183,8 @@ class ContactForm extends Component {
                                     {formErrors.subject.length > 0 && (
                                         <span className='errorMessage'>{formErrors.subject}</span>
                                     )}
-                                </div>
-
-                                <div className='col-6'>
+                                </Col>
+                                <Col>
                                     <textarea
                                         rows='5'
                                         name='message'
@@ -201,17 +192,19 @@ class ContactForm extends Component {
                                         className={`form-control formInput ${formErrors.message.length > 0 ? 'error' : null
                                             }`}
                                         onChange={this.handleChange}
-                                        placeholder='Message'
+                                        placeholder='Tu zanechajte Vašu správu'
                                         noValidate
                                     ></textarea>
                                     {formErrors.message.length > 0 && (
                                         <span className='errorMessage'>{formErrors.message}</span>
                                     )}
-                                </div>
-                            </div>
-                            <button className="btn btn-danger" type='submit'>
-                                Odoslať správu
-          </button>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col className="text-right">
+                                    <button className="btn btn-danger" type='submit'>Odoslať správu</button>
+                                </Col>
+                            </Row>
                         </form>
                         <ToastContainer />
 

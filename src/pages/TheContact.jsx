@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import ContactForm from '../components/ContactForm'
 import OpenHours from '../components/OpenHours'
+
 const TheContact = () => {
     return (
         <div className="contact">
@@ -11,16 +12,22 @@ const TheContact = () => {
                         <h2>Kontakt</h2>
                     </Col>
                 </Row>
-                <OpenHours size="lg" />
                 <Row>
-                    <Col xs={12} md={6}>
-                        <p>Nájdete nás:</p>
+                    <Col xs={12} md={6} className="mx-auto">
+                        <h3>Kontaktné údaje:</h3>
                         <ul>
-                            <li>Andreja Sládkoviča 1, 97101 Prievidza</li>
-                            <li>0908 244 019, 0915 715 876</li>
+                            <li>Andreja Sládkoviča 1, <br /> 971 01 Prievidza</li>
+                            <li><a href="tel: +421 908 244 019">+421 908 244 019</a></li>
+                            <li><a href="tel: +421915715876">+421 915 715 876</a> </li>
                             <li><a href="mailto: inexdecor@inexdecor.sk">inexdecor@inexdecor.sk</a> </li>
                         </ul>
                     </Col>
+                    <Col md={6} className="mx-auto" >
+                        <h3>Predajňa - otváracie hodiny</h3>
+                        <OpenHours cName="table table-striped col-10 mx-auto" />
+                    </Col>
+                </Row>
+                <Row>
                     <Col xs={12} md={6}>
                         <p>Tu sa bude nachadzat mapka</p>
                     </Col>
