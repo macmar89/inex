@@ -123,6 +123,17 @@ body{
   }
 }
 
+//  gallery
+//  -----------------------------------
+
+.react-photo-gallery--gallery {
+  img:hover, 
+  img:focus {
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+  }
+}
+
 //  mobile devices
 //  -----------------------------------
 
@@ -136,3 +147,5 @@ body {
   }
 }
 }
+
+

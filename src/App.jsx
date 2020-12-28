@@ -1,4 +1,5 @@
 import React from 'react'
+import '../node_modules/animate.css/animate.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './scss/App.scss'
 import { Switch, Route } from 'react-router-dom'

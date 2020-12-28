@@ -101,7 +101,7 @@ const GalleryINEX = () => {
     return (
         <div>
 
-            <Gallery photos={photos} />;
+            <Gallery className="gallery" photos={photos} />;
         </div>
     )
 }

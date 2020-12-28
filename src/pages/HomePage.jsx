@@ -5,7 +5,7 @@ import CompaniesLogo from '../components/CompaniesLogo'
 const HomePage = () => {
     return (
         <div className="HomePage">
-            <h2 >Home page</h2>
+            <h2>Home page</h2>
             <Row>
                 <Col md={10} className="mx-auto">
                     <h4>Vitajte na stránke spoločnosti INEX Decor, s.r.o</h4>
