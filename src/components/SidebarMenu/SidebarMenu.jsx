@@ -18,7 +18,8 @@ const SidebarMenu = () => {
         <div className="SideBar">
             <div className="SidebarMenu" >
                 <Row >
-                    <Col className={sidebar ? "col-9" : "d-none"}>
+                    <Col className={sidebar ? "SidebarMenuActive" : "SidebarMenu"}>
+                        <Button className="btn-dark" onClick={showSidebar}>Menu</Button>
                         <header className="SidebarHeader">
                             <h3>INEX DECOR, S.R.O. </h3>
                             <span>INTERIÉR - EXTERIÉR - DEKORÁCIE </span>
@@ -33,9 +34,6 @@ const SidebarMenu = () => {
                             ))}
                         </ul >
                     </Col >
-                    <Col className="col-3">
-                        <Button className="btn-dark" onClick={showSidebar}>Menu</Button>
-                    </Col>
                 </Row >
             </div >
         </div >

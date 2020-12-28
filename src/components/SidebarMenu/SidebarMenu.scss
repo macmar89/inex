@@ -7,15 +7,15 @@ $color-two: #9a9c9e;
         float: left;
         background-color: #1A1C1E;
         max-width: 480px;
-        padding: 1rem ;  
         position: fixed;
-        height: 100%;
-        display: flex;
         z-index: 99;
     }
-    .SidebarActive {
+    .SidebarMenuActive {
         padding: 3rem 2rem;
         max-width: 480px;
+        height: 100%;
+        background-color: hotpink;
+
     }
     .SidebarHeader {
         margin-top: 3rem;
@@ -41,6 +41,9 @@ $color-two: #9a9c9e;
         position: relative;
         border-bottom: 1px solid $color-menu;
         padding: 0.5rem 0; 
+        & :last-child {
+            border: none;
+        }
     }
 
     .NavItem:focus,
