@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const SidebarData = [
     { title: 'Home page', path: '/homepage' },
     { title: 'Galéria', path: '/galeria' },
