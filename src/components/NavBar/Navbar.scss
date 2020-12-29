@@ -24,6 +24,7 @@
     font-size: 2rem;
     background: none;
     color: $color-menu-text;
+    // transition: all 3s ease-out;
   }
 
   
@@ -51,16 +52,12 @@
     justify-content: start;
     align-items: center;
     // padding: 8px 0px 8px 16px;
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
     padding-left: 0.5rem;
     list-style: none;
     border-bottom: 1px solid $color-menu-text;
-  }
-  .nav-text:last-child {
-    border: none;
-  }
-  .nav-text:hover {
-    background-color: $color-menu-hover;
+    &:last-child { border: none; }
+    &:hover, &:focus { background-color: $color-menu-hover; }
   }
   
   .nav-text a {
@@ -71,7 +68,10 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0.5rem 0;  
+    text-shadow: none;
+    &:hover {
+      color: white;
+    }
 }
   
   
