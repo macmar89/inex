@@ -16,13 +16,15 @@ import Picture from './img/cropped-body.jpg'
 import TheGallery from './pages/TheGallery'
 
 import InexFooter from './components/InexFooter'
+import NavBar from './components/NavBar/NavBar'
 
 function App() {
   return (
     <div className="app">
-      <SidebarMenu />
+      {/* <SidebarMenu /> */}
       {/* <MasterHeader /> */}
       {/* <TheNavigation /> */}
+      <NavBar />
       <Container>
         <Row>
           <Col lg={10} className="HomePicture mx-auto">
@@ -30,7 +32,7 @@ function App() {
           </Col>
         </Row>
         <Switch >
-          <Route path='/homepage' component={HomePage} />
+          <Route path='/homepage' exact component={HomePage} />
           <Route path='/kontakt' component={TheContact} />
           <Route path='/galeria' component={TheGallery} />
           <Route path='/japonskesteny' component={JaponskeSteny} />
