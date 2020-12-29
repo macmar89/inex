@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 import { SidebarData } from '../../data/SidebarData'
 
 
-
-
 const NavBar = () => {
 
     const [sidebar, setSidebar] = useState(false);
@@ -15,7 +13,6 @@ const NavBar = () => {
 
     return (
         <div className='NavbarMenu'>
-            {/* <IconContext.Provider value={{ color: '#fff' }}> */}
             <div className='navbar'>
                 <Link to='#' className='menu-bars'>
                     {/* <FaIcons.FaBars onClick={showSidebar} /> */}
