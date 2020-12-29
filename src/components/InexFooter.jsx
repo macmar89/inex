@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import OpenHours from './OpenHours'
+import ContactData from './ContactData/ContactData'
 
 
 const InexFooter = () => {
@@ -8,20 +9,16 @@ const InexFooter = () => {
         <div className="InexFooter mx-auto">
             <Container>
                 <Row>
-                    <Col>
-                        <h4>Otváracie hodiny</h4>
+                    <Col className="d-none d-md-block" md={4} >
+                        <h3>Otváracie hodiny</h3>
                         <OpenHours cName="inextable" />
                     </Col>
-                    <Col>
+                    <Col xs={12} md={4} >
                         <p>avojcek</p>
                     </Col>
-                    <Col>
-                        <h4>Kontakt</h4>
-                        <ul>
-                            <li><a href="mailto: inexdecor@inexdecor.sk">inexdecor@inexdecor.sk</a></li>
-                            <li><a href="tel: +421908244019">+421 908 244 019</a></li>
-                            <li><a href="tel: +421915715876">+421 915 715 876</a></li>
-                        </ul>
+                    <Col xs={12} md={4} >
+                        <h3>Kontaktné údaje</h3>
+                        <ContactData />
                     </Col>
                 </Row>
             </Container>

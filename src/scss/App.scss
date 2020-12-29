@@ -70,47 +70,57 @@ body{
 .InexFooter {
   background-color: $color-two;
   
+  h3 {
+    text-align: center;
+  }
   .inextable  {
 
+    margin: 0 auto;
+    td {
+      padding: 0;
+    }
     td:last-child {
       padding-left: 1rem;
     }
   }
-
   .row {
     padding-top: 2rem;
     padding-bottom: 1rem;
   }
 
-  h4 {
-    text-align: center;
-  }
+  // ul {
+  //   list-style: none;
+  //   padding: 1rem;
+  //   li {
+  //     margin: 0 auto;
 
-
-
-  ul {
-    list-style: none;
-    padding: 1rem;
-
-
-  }
+  //   }
+  //   svg {
+  //     margin-bottom: 0.14rem;
+  //   }
+  //   a {
+  //     margin-left: 0.5rem;
+  //   }
+  // }
 }
 
 //  Contact
 //  -----------------------------------
 
-.contact {
-  ul {
-    margin-left: 3rem;
-    li {
-      margin: 0.8rem 0;
-      font-size: 1.1rem;
+.ContactPage {
+  .cd {  
+    ul {
+      list-style-type: none;
+      li {
+        margin: 0.8rem 0;
+        font-size: 1.1rem;
+      }
     }
   }
-  h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+    h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
 }
 
 //  ContactForm
