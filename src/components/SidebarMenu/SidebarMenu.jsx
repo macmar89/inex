@@ -19,7 +19,6 @@ const SidebarMenu = () => {
             <div className="SidebarMenu" >
                 <Row >
                     <Col className={sidebar ? "SidebarMenuActive" : "SidebarMenu"}>
-                        <Button className="btn-dark" onClick={showSidebar}>Menu</Button>
                         <header className="SidebarHeader">
                             <h3>INEX DECOR, S.R.O. </h3>
                             <span>INTERIÉR - EXTERIÉR - DEKORÁCIE </span>
@@ -33,6 +32,7 @@ const SidebarMenu = () => {
                                 </li >
                             ))}
                         </ul >
+                        <Button className="btn-dark" onClick={showSidebar}>Menu</Button>
                     </Col >
                 </Row >
             </div >
