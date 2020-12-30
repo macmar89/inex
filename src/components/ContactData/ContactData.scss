@@ -1,0 +1,24 @@
+.ContactData {
+
+    
+    margin: 0 auto;
+    .listOfContact {
+        padding: 0;
+    }
+    ul {
+    list-style: none;
+        li {
+        margin: 0 auto;
+        }
+        svg {
+        margin-bottom: 0.14rem;
+    }
+    a {
+        
+        margin-left: 0.5rem;
+        }
+        span {
+            margin-left: 1.5rem;
+        }
+    }   
+}

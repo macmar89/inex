@@ -8,6 +8,9 @@ $color-two: #9a9c9e;
 .container {
   padding: 0;
 }
+.obsah {
+  margin: 0 1rem;
+}
 body{ 
   background-color: lighten( $color-menu, 60% );
   font-family: 'Merriweather', serif;
@@ -42,12 +45,12 @@ body{
 
 .HomePicture {
   padding: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 .HomePage {
 
   z-index: 1;
-  margin: 0 1rem;
+  
   .main-picture {
     max-width: 100%;
     box-shadow: 2px 2px 5px #3a3c3e;
@@ -57,9 +60,6 @@ body{
   }
 }
 
-.pages {
-  
-}
 
 // .CompaniesLogo
 //  -----------------------------------

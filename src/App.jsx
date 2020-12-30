@@ -1,4 +1,5 @@
 import React from 'react'
+import './scss/normalize.css'
 import '../node_modules/animate.css/animate.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './scss/App.scss'
@@ -9,7 +10,6 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import HomePage from './pages/HomePage'
 import TheContact from './pages/TheContact'
-import SidebarMenu from './components/SidebarMenu/SidebarMenu';
 import JaponskeSteny from './pages/JaponskeSteny'
 
 import Picture from './img/cropped-body.jpg'
@@ -21,22 +21,21 @@ import NavBar from './components/NavBar/NavBar'
 function App() {
   return (
     <div className="app">
-      {/* <SidebarMenu /> */}
-      {/* <MasterHeader /> */}
-      {/* <TheNavigation /> */}
       <NavBar />
       <Container>
         <Row>
-          <Col lg={10} className="HomePicture mx-auto">
+          <Col xs={10} className="HomePicture mx-auto">
             <img className="main-picture" src={Picture} alt="sediacujo"></img>
           </Col>
         </Row>
-        <Switch className="pages">
-          <Route path='/homepage' exact component={HomePage} />
-          <Route path='/kontakt' component={TheContact} />
-          <Route path='/galeria' component={TheGallery} />
-          <Route path='/japonskesteny' component={JaponskeSteny} />
-        </Switch>
+        <div className="obsah">
+          <Switch >
+            <Route path='/homepage' exact component={HomePage} />
+            <Route path='/kontakt' component={TheContact} />
+            <Route path='/galeria' component={TheGallery} />
+            <Route path='/japonskesteny' component={JaponskeSteny} />
+          </Switch>
+        </div>
       </Container>
       <InexFooter />
 
