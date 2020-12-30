@@ -31,7 +31,7 @@ function App() {
             <img className="main-picture" src={Picture} alt="sediacujo"></img>
           </Col>
         </Row>
-        <Switch >
+        <Switch className="pages">
           <Route path='/homepage' exact component={HomePage} />
           <Route path='/kontakt' component={TheContact} />
           <Route path='/galeria' component={TheGallery} />

@@ -47,7 +47,7 @@ body{
 .HomePage {
 
   z-index: 1;
-
+  margin: 0 1rem;
   .main-picture {
     max-width: 100%;
     box-shadow: 2px 2px 5px #3a3c3e;
@@ -55,6 +55,10 @@ body{
   p {
     line-height: 1.5rem;
   }
+}
+
+.pages {
+  
 }
 
 // .CompaniesLogo
