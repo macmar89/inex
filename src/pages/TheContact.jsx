@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import ContactData from '../components/ContactData/ContactData'
-import ContactForm from '../components/ContactForm'
+import ContactForm from '../components/ContactForm/ContactForm'
 import OpenHours from '../components/OpenHours'
 
 const TheContact = () => {

@@ -6,6 +6,7 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import { Row, Col } from 'react-bootstrap';
+import './ContactForm.scss'
 
 // Email validation
 const emailRegex = RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
@@ -142,10 +143,10 @@ class ContactForm extends Component {
         return (
             <div className='ContactForm'>
                 <Row >
-                    <Col className="mx-auto" xs={12}>
+                    <Col className="mx-auto" xs={12} lg={10}>
                         <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
                             <Row>
-                                <Col>
+                                <Col md={4}>
                                     <input
                                         type='text'
                                         name='name'
