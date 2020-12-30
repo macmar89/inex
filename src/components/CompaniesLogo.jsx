@@ -10,18 +10,18 @@ const CompaniesLogo = () => {
     return (
         <div className="CompaniesLogo">
             <Row className="mx-auto my-5">
-                <Col xs={12} md={6} lg={3}>
+                <Col md={6} lg={3} className="col">
                     <a href="https://www.egger.com/shop/cs_SK/">
                         <img src={Egger} alt="eggerlogo" />
                     </a>
                 </Col>
-                <Col xs={12} md={6} lg={3}>
+                <Col md={6} lg={3} className="col">
                     <img src={Krono} alt="kronologo" />
                 </Col>
-                <Col xs={12} md={6} lg={3}>
+                <Col md={6} lg={3} className="col">
                     <img src={Gardinia} alt="gardinialogo" />
                 </Col>
-                <Col xs={12} md={6} lg={3}>
+                <Col md={6} lg={3} className="col">
                     <img src={Sherlock} alt="scherlocklogo" />
                 </Col>
             </Row>

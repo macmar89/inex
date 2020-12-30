@@ -24,7 +24,7 @@ function App() {
       <NavBar />
       <Container>
         <Row>
-          <Col xs={10} className="HomePicture mx-auto">
+          <Col xs={12} lg={10} className="HomePicture mx-auto">
             <img className="main-picture" src={Picture} alt="sediacujo"></img>
           </Col>
         </Row>

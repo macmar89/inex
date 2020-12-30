@@ -142,7 +142,7 @@ class ContactForm extends Component {
         return (
             <div className='ContactForm'>
                 <Row >
-                    <Col className="mx-auto" xs={12} md={8}>
+                    <Col className="mx-auto" xs={12}>
                         <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
                             <Row>
                                 <Col>
@@ -170,7 +170,7 @@ class ContactForm extends Component {
                                     {formErrors.email.length > 0 && (
                                         <span className='errorMessage'>{formErrors.email}</span>
                                     )}
-                                    <input
+                                    {/* <input
                                         type='subject'
                                         name='subject'
                                         value={this.state.subject}
@@ -182,7 +182,7 @@ class ContactForm extends Component {
                                     ></input>
                                     {formErrors.subject.length > 0 && (
                                         <span className='errorMessage'>{formErrors.subject}</span>
-                                    )}
+                                    )} */}
                                 </Col>
                                 <Col>
                                     <textarea

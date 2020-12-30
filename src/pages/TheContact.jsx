@@ -19,9 +19,9 @@ const TheContact = () => {
                         <ContactData className="cd" />
 
                     </Col>
-                    <Col md={6} className="mx-auto" >
+                    <Col xs={12} md={6} className="mx-auto" >
                         <h3>Predajňa - otváracie hodiny</h3>
-                        <OpenHours cName="table table-striped col-10 mx-auto" />
+                        <OpenHours cName="table table-striped col col-md-10 mx-auto" />
                     </Col>
                 </Row>
                 <Row>
