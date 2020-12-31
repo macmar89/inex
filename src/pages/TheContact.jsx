@@ -24,12 +24,7 @@ const TheContact = () => {
                         <OpenHours cName="table table-striped col col-md-10 mx-auto" />
                     </Col>
                 </Row>
-                <Row>
-                    <Col xs={12} md={6}>
-                        <p>Tu sa bude nachadzat mapka</p>
-                    </Col>
 
-                </Row>
                 <Row>
                     <Col >
                         <ContactForm />

@@ -14,7 +14,6 @@ const InexFooter = () => {
                         <OpenHours cName="inextable" />
                     </Col>
                     <Col md={4} className="d-none d-md-block">
-                        <p>avojcek</p>
                     </Col>
                     <Col xs={12} md={4} >
                         <h3>Kontaktné údaje</h3>
