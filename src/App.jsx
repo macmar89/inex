@@ -1,23 +1,26 @@
 import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import { Container, Row, Col } from 'react-bootstrap'
+
+import Picture from './img/cropped-body.jpg'
+
+//  styles 
 import './scss/normalize.css'
 import '../node_modules/animate.css/animate.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './scss/App.scss'
-import { Switch, Route } from 'react-router-dom'
-import { Container, Row, Col } from 'react-bootstrap'
 
-// components
-
+//  pages
 import HomePage from './pages/HomePage'
 import TheContact from './pages/TheContact'
 import JaponskeSteny from './pages/JaponskeSteny'
-
-import Picture from './img/cropped-body.jpg'
 import TheGallery from './pages/TheGallery'
 
+// components
 import InexFooter from './components/InexFooter'
 import NavBar from './components/NavBar/NavBar'
 
+// 
 function App() {
   return (
     <div className="app">
@@ -30,7 +33,7 @@ function App() {
         </Row>
         <div className="obsah">
           <Switch >
-            <Route path='/homepage' exact component={HomePage} />
+            <Route path='/homepage' component={HomePage} />
             <Route path='/kontakt' component={TheContact} />
             <Route path='/galeria' component={TheGallery} />
             <Route path='/japonskesteny' component={JaponskeSteny} />
