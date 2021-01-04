@@ -29,12 +29,13 @@ const NavBar = () => {
                     {SidebarData.map((item, index) => {
                         return (
                             <li key={index} className='nav-text'>
-                                <Link to={item.path}>
-                                    <span>{item.title}</span>
+                                <Link className={item.cName} to={item.path}>
+                                    <span >{item.title}</span>
                                 </Link>
                             </li>
                         );
                     })}
+
                 </ul>
             </nav>
         </ div >
