@@ -1,11 +1,24 @@
 import React from 'react'
-import AccordMenu from '../components/AccordMenu/AccordMenu'
+import { Link } from 'react-router-dom'
+import Accordion from '../components/acord/acord'
 
 const JaponskeSteny = () => {
     return (
         <div className="JapanWalls">
             <h2>Japonské steny</h2>
-            <AccordMenu />
+            <div className="wrapper">
+                <Accordion title="Galeria">
+                    <ul>
+                        <li>
+                            <Link to='/dvere'>Dvere</Link>
+                        </li>
+                        <li>
+                            <Link to='/rolety'>Rolety</Link>
+                        </li>
+                    </ul>
+                </Accordion>
+
+            </div>
         </div>
     )
 }

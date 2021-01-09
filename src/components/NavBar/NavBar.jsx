@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './Navbar.scss'
+
+import Accordion from '../acord/acord'
+
 import { Link } from 'react-router-dom'
-import { SidebarData } from '../../data/SidebarData'
 import * as AiIcons from 'react-icons/ai'
 import * as FaIcons from 'react-icons/fa'
 
@@ -20,13 +22,13 @@ const NavBar = () => {
                 </Link>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-                <ul className='nav-menu-items' onClick={showSidebar}>
+                <ul className='nav-menu-items' >
                     <li className='navbar-toggle'>
                         <Link to='#' className='menu-bars'>
                             <AiIcons.AiOutlineClose onClick={showSidebar} />
                         </Link>
                     </li>
-                    {SidebarData.map((item, index) => {
+                    {/* {SidebarData.map((item, index) => {
                         return (
                             <li key={index} className='nav-text'>
                                 <Link className={item.cName} to={item.path}>
@@ -34,7 +36,30 @@ const NavBar = () => {
                                 </Link>
                             </li>
                         );
-                    })}
+                    })} */}
+                    <li className="nav-text" onClick={showSidebar}>
+                        <Link to='/homepage'>Homepage</Link>
+                    </li>
+                    <li className="nav-text">
+                        <div className="wrapper">
+                            <Accordion title="Galeria">
+                                <ul>
+                                    <li>
+                                        <Link to='/dvere' onClick={showSidebar}>Dvere</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/rolety' onClick={showSidebar}>Rolety</Link>
+                                    </li>
+                                </ul>
+                            </Accordion>
+                        </div>
+                    </li>
+                    <li className="nav-text" onClick={showSidebar}>
+                        <Link to='/kontakt'>Kontakt</Link>
+                    </li>
+                    <li className="nav-text" onClick={showSidebar}>
+                        <Link to='/japonskesteny'>Japan</Link>
+                    </li>
 
                 </ul>
             </nav>
