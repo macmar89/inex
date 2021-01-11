@@ -1,4 +1,5 @@
 import React from 'react'
+import './InexFooter.scss'
 import { Row, Col, Container } from 'react-bootstrap'
 import OpenHours from './OpenHours'
 import ContactData from './ContactData/ContactData'

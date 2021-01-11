@@ -1,20 +1,26 @@
 // variables
-$color-menu: #3a3c3e;
-$color-two: #9a9c9e;
+@import './variables.scss';
+
+// $color-menu: #3a3c3e;
+// $color-two: #9a9c9e;
 // $link-color: #3a3c3e;
 
+body {
+  background-color: lighten($color-menu-hover, 60%);
+}
 
 //css
 .container {
+  box-shadow: 0px 10px 20px $color-menu-hover;
+  background-color: lighten($color-menu-hover, 40%);
   padding: 0;
-  background-color: lighten( $color-menu, 60% );
-  box-shadow: 0px 5px 10px $color-menu;
 }
 .obsah {
+  // background-color: lighten( $color-menu, 60% );
   margin: 0 1rem;
 }
 body{ 
-  background-color: lighten( $color-menu, 40% );
+  // background-color: lighten( $color-menu, 40% );
   font-family: 'Merriweather', serif;
   color: $color-menu;
   h2,h3,h4 {
@@ -47,14 +53,6 @@ body{
 
 }
 
-.app {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-
-}
-
-
 .HomePicture {
   padding: 0;
   margin-bottom: 3rem;
@@ -80,41 +78,6 @@ body{
   margin: 0 1rem;
 }
 
-//  InexFooter
-//  -----------------------------------
-
-.InexFooter {
-  background-color: $color-two;
-  
-  .inextable  {
-    margin: 0 auto;
-    td {
-      padding: 0;
-    }
-    td:last-child {
-      padding-left: 1rem;
-    }
-  }
-  .row {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
-
-  // ul {
-  //   list-style: none;
-  //   padding: 1rem;
-  //   li {
-  //     margin: 0 auto;
-
-  //   }
-  //   svg {
-  //     margin-bottom: 0.14rem;
-  //   }
-  //   a {
-  //     margin-left: 0.5rem;
-  //   }
-  // }
-}
 
 //  Contact
 //  -----------------------------------
@@ -170,11 +133,6 @@ body {
     margin-bottom: 1rem;
   }
 
-  .SideBar {
-    h3 {
-      color: hotpink;
-    }
-  }
 }
 }
 

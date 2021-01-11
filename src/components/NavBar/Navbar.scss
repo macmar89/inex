@@ -42,7 +42,6 @@
     left: 0%;
     transition: 350ms;
   }
-  
   .nav-text {
     display: flex;
     justify-content: start;
@@ -54,6 +53,10 @@
     border-bottom: 1px solid $color-menu-text;
     &:last-child { border: none; }
     &:hover, &:focus { background-color: $color-menu-hover; }
+                        svg {
+                          margin-right: 0.5rem;
+                          color: white;
+                        }
   }
   
   .nav-text a {

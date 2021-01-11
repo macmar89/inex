@@ -38,6 +38,7 @@ const NavBar = () => {
                         );
                     })} */}
                     <li className="nav-text" onClick={showSidebar}>
+                        <AiIcons.AiOutlineHome />
                         <Link to='/homepage'>Homepage</Link>
                     </li>
                     <li className="nav-text">
