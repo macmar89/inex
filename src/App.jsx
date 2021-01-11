@@ -15,18 +15,17 @@ import HomePage from './pages/HomePage'
 import TheContact from './pages/TheContact'
 import JaponskeSteny from './pages/JaponskeSteny'
 import TheGallery from './pages/TheGallery'
-import Podlahy from './pages/Podlahy'
+import Rolety from './pages/Rolety'
+import Dvere from './pages/Dvere'
 
 // components
 import InexFooter from './components/InexFooter'
 import NavBar from './components/NavBar/NavBar'
-import ProSideBar from './components/ProSidebar/ProSidebar'
 
 // 
 function App() {
   return (
     <div className="app">
-      {/* <ProSideBar /> */}
       <NavBar />
       <Container>
         <Row>
@@ -39,13 +38,13 @@ function App() {
             <Route path='/homepage' component={HomePage} />
             <Route path='/kontakt' component={TheContact} />
             <Route path='/galeria' component={TheGallery} />
-            <Route path='/podlahy' component={Podlahy} />
+            <Route path='/rolety' component={Rolety} />
+            <Route path='/dvere' component={Dvere} />
             <Route path='/japonskesteny' component={JaponskeSteny} />
           </Switch>
         </div>
       </Container>
       <InexFooter />
-
     </div>
   );
 }

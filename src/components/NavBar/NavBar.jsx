@@ -45,20 +45,23 @@ const NavBar = () => {
                             <Accordion title="Galeria">
                                 <ul>
                                     <li>
-                                        <Link to='/dvere' onClick={showSidebar}>Dvere</Link>
+                                        <Link to='/galeriadvere' onClick={showSidebar}>Dvere</Link>
                                     </li>
                                     <li>
-                                        <Link to='/rolety' onClick={showSidebar}>Rolety</Link>
+                                        <Link to='/galeriarolety' onClick={showSidebar}>Rolety</Link>
                                     </li>
                                 </ul>
                             </Accordion>
                         </div>
                     </li>
                     <li className="nav-text" onClick={showSidebar}>
-                        <Link to='/kontakt'>Kontakt</Link>
+                        <Link to='/rolety'>Rolety</Link>
                     </li>
                     <li className="nav-text" onClick={showSidebar}>
-                        <Link to='/japonskesteny'>Japan</Link>
+                        <Link to='/dvere'>Dvere</Link>
+                    </li>
+                    <li className="nav-text" onClick={showSidebar}>
+                        <Link to='/kontakt'>Kontakt</Link>
                     </li>
 
                 </ul>

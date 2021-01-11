@@ -7,12 +7,14 @@ $color-two: #9a9c9e;
 //css
 .container {
   padding: 0;
+  background-color: lighten( $color-menu, 60% );
+  box-shadow: 0px 5px 10px $color-menu;
 }
 .obsah {
   margin: 0 1rem;
 }
 body{ 
-  background-color: lighten( $color-menu, 60% );
+  background-color: lighten( $color-menu, 40% );
   font-family: 'Merriweather', serif;
   color: $color-menu;
   h2,h3,h4 {
