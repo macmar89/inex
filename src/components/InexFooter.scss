@@ -1,0 +1,19 @@
+@import '../scss/variables.scss';
+
+.InexFooter {
+    
+    .inextable  {
+        margin: 0 auto;
+        td {
+            padding: 0;
+        }
+        td:last-child {
+            padding-left: 1rem;
+        }
+    }
+    .row {
+        // background-color: $color-menu;
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+}
