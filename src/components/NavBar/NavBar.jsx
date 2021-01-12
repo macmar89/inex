@@ -46,6 +46,9 @@ const NavBar = () => {
                             <Accordion title="Galeria">
                                 <ul>
                                     <li>
+                                        <Link to='/galeria' onClick={showSidebar}>Galeria</Link>
+                                    </li>
+                                    <li>
                                         <Link to='/galeriadvere' onClick={showSidebar}>Dvere</Link>
                                     </li>
                                     <li>

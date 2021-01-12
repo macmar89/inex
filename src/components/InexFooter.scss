@@ -1,6 +1,7 @@
 @import '../scss/variables.scss';
 
 .InexFooter {
+
     
     .inextable  {
         margin: 0 auto;
@@ -12,8 +13,11 @@
         }
     }
     .row {
-        // background-color: $color-menu;
-      padding-top: 2rem;
-      padding-bottom: 1rem;
+        background-color: transparent;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+
     }
+
+
 }

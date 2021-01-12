@@ -28,23 +28,23 @@ function App() {
     <div className="app">
       <NavBar />
       <Container>
-        <Row>
-          <Col xs={12} lg={10} className="HomePicture mx-auto">
-            <img className="main-picture" src={Picture} alt="sediacujo"></img>
-          </Col>
-        </Row>
         <div className="obsah">
+          <Row>
+            <Col xs={12} lg={10} className="HomePicture mx-auto">
+              <img className="main-picture" src={Picture} alt="sediacujo"></img>
+            </Col>
+          </Row>
           <Switch >
             <Route path='/homepage' component={HomePage} />
             <Route path='/kontakt' component={TheContact} />
             <Route path='/galeria' component={TheGallery} />
             <Route path='/rolety' component={Rolety} />
-            <Route path='/dvere' component={Dvere} />
+            <Route path='/galeriadvere' component={Dvere} />
             <Route path='/japonskesteny' component={JaponskeSteny} />
           </Switch>
+          <InexFooter />
         </div>
       </Container>
-      <InexFooter />
     </div>
   );
 }

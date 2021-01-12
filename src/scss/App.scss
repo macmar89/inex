@@ -7,17 +7,18 @@
 
 body {
   background-color: lighten($color-menu-hover, 60%);
+  // background-color: darken($color-menu-text, 20%);
 }
 
 //css
 .container {
-  box-shadow: 0px 10px 20px $color-menu-hover;
-  background-color: lighten($color-menu-hover, 40%);
   padding: 0;
+  // background-color: lighten($color-menu-hover, 30%);
 }
 .obsah {
-  // background-color: lighten( $color-menu, 60% );
-  margin: 0 1rem;
+  background-color: lighten( $color-menu, 60% );
+  box-shadow: 0 10px 20px $color-menu-hover;
+  padding: 0 1rem;
 }
 body{ 
   // background-color: lighten( $color-menu, 40% );

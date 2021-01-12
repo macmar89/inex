@@ -1,11 +1,12 @@
 import React from 'react'
+import './TheGallery.scss'
 
 import GalleryINEX from '../components/Gallery'
 
 
 const TheGallery = () => {
     return (
-        <div>
+        <div className="Galeria">
             <h2>Galéria</h2>
             <GalleryINEX />
 
