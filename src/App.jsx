@@ -36,6 +36,7 @@ function App() {
             </Col>
           </Row>
           <Switch >
+
             <Route path='/homepage' component={HomePage} />
             <Route path='/referencie' component={Referencie} />
             <Route path='/kontakt' component={TheContact} />
