@@ -16,6 +16,7 @@ body {
   // background-color: lighten($color-menu-hover, 30%);
 }
 .obsah {
+  position: relative;
   background-color: lighten( $color-menu, 60% );
   box-shadow: 0 10px 20px $color-menu-hover;
   padding: 0 1rem;

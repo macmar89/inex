@@ -17,6 +17,7 @@ import JaponskeSteny from './pages/JaponskeSteny'
 import TheGallery from './pages/TheGallery'
 import Rolety from './pages/Rolety'
 import Dvere from './pages/Dvere'
+import Referencie from './pages/Referencie'
 
 // components
 import InexFooter from './components/InexFooter'
@@ -36,6 +37,7 @@ function App() {
           </Row>
           <Switch >
             <Route path='/homepage' component={HomePage} />
+            <Route path='/referencie' component={Referencie} />
             <Route path='/kontakt' component={TheContact} />
             <Route path='/galeria' component={TheGallery} />
             <Route path='/rolety' component={Rolety} />

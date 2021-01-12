@@ -65,6 +65,9 @@ const NavBar = () => {
                         <Link to='/dvere'>Dvere</Link>
                     </li>
                     <li className="nav-text" onClick={showSidebar}>
+                        <Link to='/referencie'>Referencie</Link>
+                    </li>
+                    <li className="nav-text" onClick={showSidebar}>
                         <Link to='/kontakt'>Kontakt</Link>
                     </li>
 

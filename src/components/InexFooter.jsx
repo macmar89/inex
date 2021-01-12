@@ -10,13 +10,11 @@ const InexFooter = () => {
         <div className="InexFooter mx-auto">
             <Container>
                 <Row>
-                    <Col className="d-none d-md-block" md={4} >
+                    <Col className="d-none d-md-block" md={6} >
                         <h3>Otváracie hodiny</h3>
                         <OpenHours cName="inextable" />
                     </Col>
-                    <Col md={4} className="d-none d-md-block">
-                    </Col>
-                    <Col xs={12} md={4} >
+                    <Col xs={12} md={6} >
                         <h3>Kontaktné údaje</h3>
                         <ContactData />
                     </Col>
