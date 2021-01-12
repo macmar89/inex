@@ -11,7 +11,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './scss/App.scss'
 
 //  pages
-import HomePage from './pages/HomePage'
+import HomePage from './pages/Homepage/HomePage'
 import TheContact from './pages/TheContact'
 import JaponskeSteny from './pages/JaponskeSteny'
 import TheGallery from './pages/TheGallery'
