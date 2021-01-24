@@ -7,7 +7,7 @@ import OpenHours from '../components/OpenHours'
 const TheContact = () => {
     return (
         <div className="ContactPage">
-            <Row className="my-3">
+            <Row>
                 <Col>
                     <h2>Kontakt</h2>
                 </Col>

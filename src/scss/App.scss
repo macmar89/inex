@@ -7,12 +7,14 @@
 
 body {
   background-color: lighten($color-menu-hover, 60%);
+  margin: 0;
   // background-color: darken($color-menu-text, 20%);
 }
 
 //css
 .container {
   padding: 0;
+  height: 100%;
   // background-color: lighten($color-menu-hover, 30%);
 }
 .obsah {
@@ -32,8 +34,10 @@ body{
   h2 {
     font-weight: 700;
     font-size: 2.5em;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
   h3 {
     font-weight: 600;
